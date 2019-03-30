@@ -1,0 +1,29 @@
+READ "mass" 600kg
+READ "acceleration" 2 m/s2
+CALCULATE "massa" * "acceleration" equals to 1200N
+STORE "force" equals to 1200N
+IF ("force" = 1200N)
+    PRINT "Answer correct"
+ELSE ("force" != 1200N)
+    PRINT "Wrong answer"
+
+READ "Year" any number less than or equals to 16.000 
+CALCULATE "Year" mod 4 equals to zero
+IF ("Year" = zero)
+    PRINT "It's Leap Year"
+ELSE ("Year" != zero)
+    PRINT "It's not Leap Year"
+
+STORE "clothes" any number less than or equals to 20
+THEN ADD "clothes" by any number equals to 20
+IF ("clothes = 20")
+    PRINT "Washing machine turned on"
+IF ("clothes < 20")
+    PRINT "Washing machine won't turn on"
+
+READ "Student" 40
+STORE "naillength" minus by any number less than or equals to 40
+IF ("nails" <= 1)
+    PRINT "Teacher praise student"
+IF ("nails" > 1)
+    PRINT "Teacher punish student"
