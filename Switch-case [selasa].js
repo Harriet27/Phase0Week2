@@ -1,61 +1,46 @@
-var tanggal = prompt("Isi Tanggal : 1 - 31");
-    if (tanggal > 0 && tanggal <= 31){
-        document.write("");
-    } else {
-        document.write("<h2>Maaf, Anda salah mengisi tanggal</h2>");
-    }          
-    
-var bulan = prompt("Isi Bulan : 1 - 12");
-var namabulan = "";
-    switch(bulan){
-        case "1":
-            namabulan = "Januari";
-            break;
-        case "2":
-            namabulan = "Februari";
-            break;
-        case "3":
-            namabulan = "Maret";
-            break;
-        case "4":
-            namabulan = "April";
-            break;
-        case "5":
-            namabulan = "Mei";
-            break;
-        case "6":
-            namabulan = "Juni";
-            break;
-        case "7":
-            namabulan = "Juli";
-            break;
-        case "8":
-            namabulan = "Agustus";
-            break;
-        case "9":
-                namabulan = "September";
-                break;
-        case "10":
-            namabulan = "Oktober";
-            break;
-        case "11":
-            namabulan = "November";
-            break;   
-        case "12":
-            namabulan = "Desember";
-            break;
-    }  
-         
+var tanggal = 1;
+var bulan = 5;
+var tahun = 1945;
 
-if(namabulan !== ""){
-    document.write("");
-} else {
-    document.write("<h2>Maaf, Anda salah mengisi bulan</h2>");
+
+switch(bulan) {
+  case 1:
+    console.log(tanggal + ' ' + 'Januari' + ' ' + tahun);
+  break;
+  case 2:
+    console.log(tanggal + ' ' + 'Februari' + ' ' + tahun);
+  break;
+  case 3:
+    console.log(tanggal + ' ' + 'Maret' + ' ' + tahun);
+  break;
+  case 4:
+    console.log(tanggal + ' ' + 'April' + ' ' + tahun);
+  break;
+  case 5:
+    console.log(tanggal + ' ' + 'Mei' + ' ' + tahun);
+  break;
+  case 6:
+    console.log(tanggal + ' ' + 'Juni' + ' ' + tahun);
+  break;
+  case 7:
+    console.log(tanggal + ' ' + 'Juli' + ' ' + tahun);
+  break;
+  case 8:
+    console.log(tanggal + ' ' + 'Agustus' + ' ' + tahun);
+  break;
+  case 9:
+    console.log(tanggal + ' ' + 'Sebtember' + ' ' + tahun);
+  break;
+  case 10:
+    console.log(tanggal + ' ' + 'Oktober' + ' ' + tahun);
+  break;
+  case 11:
+    console.log(tanggal + ' ' + 'November' + ' ' + tahun);
+  break;
+  case 12:
+    console.log(tanggal + ' ' + 'Desember' + ' ' + tahun);
+  break;
+  default:
+    console.log("bulan habis");
+  break;
 }
-    
-var tahun = prompt("Isi Tahun : 1900 - 2200");
-if (tahun > 1900 && tahun < 2200) {
-    document.write("<h2> " + tanggal + " " + namabulan + " " + tahun + "</h2>");
-} else {
-    document.write("<h2>Maaf, Anda salah mengisi tahun</h2>");
-}         

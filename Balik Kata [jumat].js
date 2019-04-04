@@ -1,12 +1,15 @@
 //Tugas 2 (Balik Kata)
-function kataTerbalik (kata) {
-    var balik = kata.split("").reverse().join("")
-    return balik
+function balikKata(kata) {
+  var newWord = '';
+  for (var i= kata.length -1; i >= 0; i --){
+    newWord += kata[i];
   }
-  
-console.log(kataTerbalik("Hello World and Coders!"))
-console.log(kataTerbalik('John Doe')); 
-console.log(kataTerbalik('I am a bookworm')); 
-console.log(kataTerbalik('Coding is my hobby')); 
-console.log(kataTerbalik('Super')); 
+return newWord;
+}
+
+console.log(balikKata('Hello World and Coders')); 
+console.log(balikKata('John Doe')); 
+console.log(balikKata('I am a bookworm'));
+console.log(balikKata('Coding is my hobby')); 
+console.log(balikKata('Super')); 
 //end Tugas 2 (Balik Kata)

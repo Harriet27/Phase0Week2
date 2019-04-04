@@ -1,9 +1,11 @@
 //Tugas 1 (Perbandingan Angka)
-function bandingkanAngka(x, y) {
-  if (x < y) {
+function bandingkanAngka(angka1, angka2) {
+  if(angka1 < angka2){
     return true;
-} else {
+  } else if (angka1 > angka2){
     return false;
+  } else if (angka1 === angka2){
+    return -1;
   }
 }
 

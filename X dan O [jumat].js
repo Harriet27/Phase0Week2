@@ -1,6 +1,12 @@
 //Tugas 4 (X and O)
 function xo(str) {
-  return str.split('o').length-1 !== str.split('x').length-1 ? false : true;
+  var x = 0;
+  var o = 0;
+  for(var i = 0; i <= str.length; i++){
+  if(str[i]==='x')x++;
+  else if(str[i]==='o')o++;
+}
+  return x === o;
 }
 
 console.log(xo('xoxoxo')); 
